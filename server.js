@@ -15,8 +15,24 @@ app.get('/',(req,res) =>{
 
 
 // Handle request
-app.get('/*', (req, res) => {
-    res.end('Hello World'); 
+app.get('/:time', (req, res) => {
+    var times = {};
+    var date = new Date(req.params.time);
+
+    if(isNaN(req.params.time)){
+        date = new Date(req.params.time); 
+    }else{
+        date = new Date(parseInt(req.params.time)); 
+    }
+
+    if(isNaN(date.getTime()))
+        res.status(400).end('Invalid date entered'); 
+
+    
+    times.unix = date.getTime();
+    times.natural = date.toLocaleString('en-us',
+        {month: 'long', year: 'numeric', day: 'numeric'});
+    res.end(JSON.stringify(times)); 
 });
 
 app.listen(8000,() => {
