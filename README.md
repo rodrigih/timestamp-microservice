@@ -28,3 +28,16 @@ url/1490310248343
 ```
 {"unix": 1490310248343 ,"natural": March 23, 2017}
 ```
+
+## Running locally
+
+To run this API locally, perform the following steps:
+
+```
+$ git clone https://github.com/rodrigih/timestamp-microservice.git
+$ cd timestamp-microservice
+$ npm install
+$ node server.js
+```
+
+You can now perform any API request using the URL ```localhost:8000```
