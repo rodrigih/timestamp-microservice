@@ -3,7 +3,8 @@
 This is an API service that returns both the unix and natural representation of the time sent.
 This was created as part of a [Free Code Camp](https://www.freecodecamp.com) project.
 
-**This is currently a work in progress**
+This project uses Node.js, Express, Bootstrap, and Pug (formerly Jade)
+
 
 ## How to use
 This API takes a string representing either a unix timestamp or a natural language date as a parameter.
