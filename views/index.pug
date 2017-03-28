@@ -1,0 +1,42 @@
+doctype html
+html
+
+    head
+        title Timestamp API
+        link(rel='stylesheet', href='/bootstrap.min.css')
+        link(rel='stylesheet', href='style.css')
+
+    body
+        div.main-div
+          h1.center-text Timestamp Microservice
+          p. 
+            This is an api service that returns both the unix and natural representation 
+            of the time sent. This was created as part of a 
+            <a href='https://freecodecamp.com' target=_blank>Free Code Camp</a> project.
+          p Source code available <a href='https://freecodecamp.com' target=_blank>here</a>
+          
+          br
+          h3.strong Parameter
+          br
+          
+          p.
+            This API takes a string representing either a unix timestamp or a natural 
+            language date as a parameter.
+          
+          br
+          h4.strong Example
+          br
+          
+          p Using natural language date March 23, 2017
+          code http://timestamp-ms.herokuapp.com/March%2023,%202017
+          br
+          br
+          p Using Unix time March 23, 2017
+          code http://timestamp-ms.herokuapp.com/1490310248343
+          br
+          br
+          
+          h4.strong Output
+          
+          code {"unix": 1490310248343, "natural": "March 23, 2017" }
+

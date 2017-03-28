@@ -1,0 +1,13 @@
+.main-div{
+    width:80%;
+    margin: 20px auto;
+    font-size:18px;
+}
+
+.center-text{
+    text-align:center;
+}
+
+.strong{
+   font-weight:bold; 
+}
